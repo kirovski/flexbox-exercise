@@ -1,0 +1,73 @@
+*{
+    font-family: verdana;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+body{
+    background: #eee;
+    color: #333;
+}
+  
+.wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+  
+  /* menu base styles */
+  
+nav{
+    background: #333;
+}
+nav ul{
+    list-style-type: none;
+    padding:0;
+}
+
+nav a{
+    color:white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding:10px;
+}
+
+nav a:hover , ul.social li:hover{
+    background-color: #666;
+}
+nav ul.social{
+    display:flex;
+    justify-content: center;
+    
+}
+ul.social li{
+    width: 40px;
+}
+
+nav ul.social a{
+    text-indent: -10000px;
+   
+}
+
+.social .fb{
+    background: url(img/fb.png) no-repeat center;
+    background-size: 80%;
+}
+.social .tw{
+    background: url(img/tw.png) no-repeat center;
+    background-size: 80%;
+}
+
+@media (min-width: 768px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul{
+        display:flex;
+    }
+    nav ul li{
+        flex: 1 1 0;
+    }
+}
